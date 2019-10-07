@@ -7,6 +7,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
+  string trash;
 do 
   { 
   cout<<"\n==GROCERY LIST MANAGER==";
@@ -17,16 +18,19 @@ do
   cin>>input; 
   if(input=='a' || input =='A')
     {
-    if (numItems>4)
+
+      
+    cout<<"What is the item?\n";
+    if (input>5)
       {
-       cout<<"You'll need a bigger list!";
+      cin>>trash;
+      cout<<"You'll need a bigger list!\n";
       }
     else
       {
-    cout<<"What is the item?\n";
     cin>>list[numItems];
     numItems++;
-      }
+      }  
     }
   }
 while(input != 'q' &&  input != 'Q');
