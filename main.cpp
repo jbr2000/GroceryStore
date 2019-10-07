@@ -21,7 +21,7 @@ do
 
       
     cout<<"What is the item?\n";
-    if (input>5)
+    if (numItems>4)
       {
       cin>>trash;
       cout<<"You'll need a bigger list!\n";
