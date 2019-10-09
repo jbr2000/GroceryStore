@@ -34,6 +34,11 @@ do
     }
   }
 while(input != 'q' &&  input != 'Q');
+if (input == 'q' || input == 'Q')
+{
+cout<<"==ITEMS TO BUY==\n";        
+cout<<"1 "<< list[0]<<endl<<"2 "<<list[1]<<endl<<"3 "<<list[2]<<endl<<"4 "<<list[3]<<endl<<"5 "<<list[4]<<endl;
+}
 
 
   return 0;
