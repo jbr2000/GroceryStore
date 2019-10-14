@@ -41,7 +41,7 @@ if (input == 'q' || input == 'Q')
  
   for (int counter=0; counter < list.size(); counter++)
     {
-    cout<<counter + 1<<". "<<list.at(counter)<<endl;
+    cout<<counter + 1<<" "<<list.at(counter)<<endl;
     }
 
 }
