@@ -15,6 +15,10 @@ do
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
   cout<<"\n (Q)uit";
+  if (list.size() > 0)
+   {
+   cout<<"\n (D)elete last item";
+   }
   cout<<"\nYour choice (A/Q): ";
   cin>>input; 
   if(input=='a' || input =='A')
@@ -25,8 +29,12 @@ do
     cin>>item;
     list.push_back (item);
     
-       
+     }
+  else if(list.size() > 0 && (input == 'D' || input == 'd'))
+    {
+    list.pop_back();
     }
+
   }
 while(input != 'q' &&  input != 'Q');
 if (input == 'q' || input == 'Q')
